@@ -1,0 +1,297 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+
+<style>
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+		font- family :Lucida Handwriting;
+
+
+
+    /* Image Location */
+    background-image: url("bg.jpg");
+ 
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    /* Font Colour */
+    color:white;
+
+
+
+
+
+        }
+
+        .navbar {
+            font-size: 18px;
+            background-color : #000080;
+            border: 1px ;
+	    color : red;
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: fixed;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+
+		
+	    
+		padding: 10px;	
+		text-align: center;
+		line-height: 50px;
+	}
+	span{
+		font-size: 25px;
+		
+		color: orange;
+		animation: blink 2s linear infinite;
+	}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: yellow;
+            }
+        }
+
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:320px) and (max-width: 480px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+    .gfg-div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: #fff;
+    }
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+    and (orientation: landscape) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: cyan;
+        color: black;
+    }
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+    and (max-device-width: 640px) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: chartreuse;
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+.page-header {
+  
+
+  /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* just styling from here */
+.header-content {
+  max-width: 500px;
+  font-size: 1.35rem;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+ 
+}
+/* creating 'buttons' from hyperlinks */
+.header-content a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 0.2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+   font-family : Lucida Handwriting;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+       <a href="#" class="logo" style="font-family: Lucida Handwriting;text-shadow: 2px 2px red";><i><span>TRAVELSHIP TOURISUM</span></i></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Package</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Service</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+ <div class="container">
+            <div class="image"></div>
+            
+        </div>
+
+
+<header class="page-header">
+
+  <div class="header-content">
+	<p style="font-family:Lucida Handwriting ;text-shadow: 2px 2px violet";> <i><b>"Travel Changes the Life"</b></i><p>
+<br>
+<br>
+
+
+    <p style="font-family:Segoe Script";>If you’re a travel professional and you own a travel business, investing in tourism 
+content writing is an idea worth considering. For that purpose, you will need a blog on your website.
+</p>
+    <p><a href="#">SignUp</a><a href="#">Readmore</a></p>
+  </div>
+</header>
+
+
+</body>
+
+
+
+</html>
