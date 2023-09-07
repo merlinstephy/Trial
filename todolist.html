@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo App</title>
+		
+		
+		<style>
+
+
+body{
+    background:#e9993d ;
+    font-family: Poppins, sans-serif
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+    padding: 60px 0;
+    color: white;
+}
+
+#line{
+   
+   
+    background-color: white;
+    
+    border-radius: 50px;
+    margin-bottom: 20px;
+
+}
+.flex-button{
+    display: inline;
+    width: 100%;
+}
+
+input{
+    border:none;
+}
+input[type='text']{
+    width: 70%;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1.2rem;
+    margin-right: 4px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+   
+}
+input[type='text']:disabled{
+    cursor:default;
+    color: rgb(227, 213, 213);
+    background-color: rgb(147, 135, 135);
+}
+input[type='button']{
+    padding: 5px;
+    font-size: 1.04rem;
+    color:white;
+    margin: 0 -3px;
+}
+#add-btn{
+    margin-right: 4px;
+    background-color: blue;
+}
+
+
+
+input[type='button']:active{
+    transform: scale(.94);
+}
+
+
+.new-tasks{
+    margin: 25px auto;
+}
+
+
+
+.del-task{
+    background-color: blue;
+}
+
+.task{
+    width: 92%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+@media screen and (max-width:450px) {
+    .task{
+        display: inline;
+    }
+    .flex-button{
+        display: block;
+        
+    width: 100%;
+    }
+}
+</style>	
+
+
+
+
+	</head>
+	<body>
+
+		<div class="container">
+			<h1> TODO LIST</h1>
+			<div id="line"></div>
+			<div class="task-input">
+				<input type="text" id="add-task" name="todo" placeholder="Enter HealthCare Products" value="">
+				<div class="flex-button">
+					<input type="button" value="Add" name='add' id="add-btn" title="Add Task">
+					
+					<span id="del-btn"></span>
+				</div>
+			</div>
+			<div class="new-tasks">
+				
+			</div>
+		</div>
+
+<script src="todo.js"></script>
+		
+		
+	</body>
+</html>
